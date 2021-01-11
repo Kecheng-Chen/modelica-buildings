@@ -1,5 +1,5 @@
-within ;
-model simpleBuilding
+within kecheng.Loads.Validation.BaseClasses;
+model SimpleBuilding
   "Dummy building model for validation purposes"
   extends Buildings.Experimental.DHC.Loads.BaseClasses.PartialBuilding;
   parameter Modelica.SIunits.HeatFlowRate QChiWat_flow_nominal
@@ -94,4 +94,4 @@ Buildings.Experimental.DHC.Loads.BaseClasses.PartialBuilding</a>
 developed for testing purposes only.
 </p>
 </html>"));
-end simpleBuilding;
+end SimpleBuilding;

@@ -1,4 +1,4 @@
-within ;
+within kecheng.Loads.Validation.BaseClasses;
 model BuildingTimeSeries_new
   "Building model with heating and cooling loads provided as time series"
   extends Buildings.Experimental.DHC.Loads.BaseClasses.PartialBuilding(

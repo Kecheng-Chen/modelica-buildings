@@ -1,4 +1,4 @@
-within ;
+within kecheng.Loads.Validation;
 model CouplingTimeSeries
   "Example illustrating the coupling of a building model to heating water and chilled water loops"
   extends Modelica.Icons.Example;
@@ -6,8 +6,8 @@ model CouplingTimeSeries
     "Source side medium";
   //parameter Modelica.SIunits.Time perAve=600
     //"Period for time averaged variables";
-  buildingseries bui(
-    filNam="D:/Modelica_file/modelica-buildings/Buildings/Resources/Data/Experimental/DHC/Loads/Examples/SwissResidential_20190916.mos",
+  BaseClasses.Buildingseries bui(
+    filNam="modelica://Buildings/Resources/Data/Experimental/DHC/Loads/Examples/SwissResidential_20190916.mos",
     facMulHea=10,
     facMulCoo=40,
     k=1,

@@ -1,5 +1,5 @@
-within ;
-model onlychillerborefield3
+within kecheng.Loads.Validation;
+model Onlychillerborefield3
 "Partial validation of the ETS model with heat recovery chiller and optional borefield"
   extends Modelica.Icons.Example;
   package Medium=Buildings.Media.Water
@@ -82,7 +82,7 @@ model onlychillerborefield3
     final m_flow_nominal=ets.hex.m1_flow_nominal)
     "District water supply temperature"
     annotation (Placement(transformation(extent={{-10,-10},{10,10}},rotation=0,origin={-80,-80})));
-  buildingseries bui(
+  BaseClasses.Buildingseries bui(
     filNam="modelica://Buildings/Resources/Data/Experimental/DHC/Loads/Examples/SwissResidential_20190916.mos",
     facMulHea=10,
     facMulCoo=40,
@@ -186,4 +186,4 @@ load is considered).
 </ul>
 </html>"),
     uses(Buildings(version="8.0.0")));
-end onlychillerborefield3;
+end Onlychillerborefield3;

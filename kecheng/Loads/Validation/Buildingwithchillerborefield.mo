@@ -1,4 +1,4 @@
-within ;
+within kecheng.Loads.Validation;
 model Buildingwithchillerborefield
   extends Modelica.Icons.Example;
   package Medium=Buildings.Media.Water
@@ -34,8 +34,8 @@ model Buildingwithchillerborefield
     "Chiller performance data"
     annotation (Placement(transformation(extent={{38,84},{58,104}})));
 
-  buildingseries bui(
-    filNam="D:/Modelica_file/modelica-buildings/Buildings/Resources/Data/Experimental/DHC/Loads/Examples/SwissResidential_20190916.mos",
+  BaseClasses.Buildingseries bui(
+    filNam="modelica://Buildings/Resources/Data/Experimental/DHC/Loads/Examples/SwissResidential_20190916.mos",
     facMulHea=10*QHea_flow_nominal/(1.7E5),
     facMulCoo=40*QCoo_flow_nominal/(-1.5E5),
     k=1,

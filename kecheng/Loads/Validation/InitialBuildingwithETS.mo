@@ -1,4 +1,4 @@
-within ;
+within kecheng.Loads.Validation;
 model InitialBuildingwithETS
   extends Modelica.Icons.Example;
   import TypDisSys=Buildings.Experimental.DHC.Types.DistrictSystemType

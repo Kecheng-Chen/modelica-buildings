@@ -1,5 +1,5 @@
-within ;
-model simpleBuildingforchillerborefield
+within kecheng.Loads.Validation.BaseClasses;
+model SimpleBuildingforchillerborefield
 "Dummy building model for validation purposes"
   extends Buildings.Experimental.DHC.Loads.BaseClasses.PartialBuilding(
   have_heaWat=true,
@@ -197,4 +197,4 @@ developed for testing purposes only.
 </p>
 </html>"),
     uses(Modelica(version="3.2.3"), Buildings(version="8.0.0")));
-end simpleBuildingforchillerborefield;
+end SimpleBuildingforchillerborefield;

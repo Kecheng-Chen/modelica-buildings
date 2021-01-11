@@ -1,5 +1,5 @@
-within ;
-model onlychillerborefield
+within kecheng.Loads.Validation;
+model Onlychillerborefield
 "Partial validation of the ETS model with heat recovery chiller and optional borefield"
   extends Modelica.Icons.Example;
   package Medium=Buildings.Media.Water
@@ -363,4 +363,4 @@ load is considered).
 </li>
 </ul>
 </html>"));
-end onlychillerborefield;
+end Onlychillerborefield;

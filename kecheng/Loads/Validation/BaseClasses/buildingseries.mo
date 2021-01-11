@@ -1,5 +1,5 @@
-within ;
-model buildingseries
+within kecheng.Loads.Validation.BaseClasses;
+model Buildingseries
 "Building model with heating and cooling loads provided as time series"
   extends Buildings.Experimental.DHC.Loads.BaseClasses.PartialBuilding(
     redeclare package Medium=Buildings.Media.Water,
@@ -291,4 +291,4 @@ First implementation.
         preserveAspectRatio=false,
         extent={{-300,-300},{300,300}})),
     uses(Buildings(version="8.0.0"), Modelica(version="3.2.3")));
-end buildingseries;
+end Buildingseries;

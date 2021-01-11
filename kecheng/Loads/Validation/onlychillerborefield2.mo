@@ -1,5 +1,5 @@
-within ;
-model onlychillerborefield2
+within kecheng.Loads.Validation;
+model Onlychillerborefield2
 "Partial validation of the ETS model with heat recovery chiller and optional borefield"
   extends Modelica.Icons.Example;
   package Medium=Buildings.Media.Water
@@ -173,7 +173,7 @@ model onlychillerborefield2
     y(unit="J"))
     "Chiller electricity use"
     annotation (Placement(transformation(extent={{300,-70},{320,-50}})));
-  simpleBuildingforchillerborefield bui(
+  BaseClasses.SimpleBuildingforchillerborefield bui(
   mCon_flow_nominal=datChi.mCon_flow_nominal,
   mEva_flow_nominal=datChi.mEva_flow_nominal,
   QChiWat_flow_nominal=ets.QChiWat_flow_nominal,
@@ -260,4 +260,4 @@ load is considered).
 </ul>
 </html>"),
     uses(Buildings(version="8.0.0")));
-end onlychillerborefield2;
+end Onlychillerborefield2;

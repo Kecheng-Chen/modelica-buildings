@@ -1,5 +1,5 @@
-within ;
-model buildingseries2
+within kecheng.Loads.Validation.BaseClasses;
+model Buildingseries2
 "Building model with heating and cooling loads provided as time series"
   extends Buildings.Experimental.DHC.Loads.BaseClasses.PartialBuilding(
     redeclare package Medium=Buildings.Media.Water,
@@ -297,4 +297,4 @@ equation
           -66},{220,-66},{220,280},{268,280}}, color={0,0,127}));
   connect(disFloCoo.QActTot_flow, mulQCoo_flow.u) annotation (Line(points={{141,
           -266},{222,-266},{222,240},{268,240}}, color={0,0,127}));
-end buildingseries2;
+end Buildingseries2;
