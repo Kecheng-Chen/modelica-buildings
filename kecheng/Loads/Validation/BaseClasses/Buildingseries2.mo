@@ -209,6 +209,12 @@ model Buildingseries2
     u(final unit="W"),
     final k=facMul) if have_cooLoa "Scaling"
     annotation (Placement(transformation(extent={{272,-10},{292,10}})));
+  Buildings.Fluid.Sources.Boundary_pT bou(redeclare final package Medium =
+        Medium, nPorts=1)
+    annotation (Placement(transformation(
+        extent={{-10,-10},{10,10}},
+        rotation=90,
+        origin={-166,-140})));
 protected
   parameter Modelica.SIunits.SpecificHeatCapacity cpHeaWat_nominal=
     Medium.specificHeatCapacityCp(
@@ -297,4 +303,7 @@ equation
           -66},{220,-66},{220,280},{268,280}}, color={0,0,127}));
   connect(disFloCoo.QActTot_flow, mulQCoo_flow.u) annotation (Line(points={{141,
           -266},{222,-266},{222,240},{268,240}}, color={0,0,127}));
+  connect(mulHeaWatInl[1].port_b,bou. ports[1]) annotation (Line(points={{-260,
+          -60},{-54,-60},{-54,-130},{-166,-130}},
+                                       color={0,127,255}));
 end Buildingseries2;
